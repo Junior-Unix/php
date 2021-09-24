@@ -12,13 +12,17 @@ class Endereco{
     }
 
     public function __destruct(){
-        var_dump("Destruir!");
+        //var_dump("Destruir!");
+    }
+
+    public function __toString(){
+        return $this->logradouro . ", " . $this->numero . " - " . $this->cidade;
     }
 }
 
-$meuEndereco = new Endereco("Rua dos Anjos Caídos,","664","Fim");
-
-var_dump($meuEndereco);
+$meuEndereco = new Endereco("Rua dos Anjos Caídos","664","Fim");
+echo $meuEndereco;
+//var_dump($meuEndereco);
 
 unset($meuEndereco);
 
