@@ -12,7 +12,7 @@ class Pessoa{
     }
 }
 
-class Programador extends Pessoa{
+class Programador extends Pessoa{ //não vai pegar private, somente mesma classe p private.
     public function verDados(){
         echo get_class($this) . "<br>"; // mostra qual class pertence.
 
