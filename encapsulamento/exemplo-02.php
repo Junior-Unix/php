@@ -22,7 +22,7 @@ class Programador extends Pessoa{ //não vai pegar private, somente mesma classe
     }
 }
 
-$object = new Programador(); // Só verá public.
+$object = new Pessoa(); // Só verá public.
 //echo $object->senha . "<br>"; //Ao comentar, acesso do proximo clone $object libera.
-
+$object = new Programador(); //Não acessa private.
 $object->verDados(); // Acessa de dentro, tem permissão total.
