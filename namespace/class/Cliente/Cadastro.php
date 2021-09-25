@@ -1,11 +1,11 @@
-<?php
-//cadastro cliente.
+<?php //cadastro cliente.
+
 namespace Cliente;
 
 class Cadastro extends \Cadastro{
 
     public function registrarVenda(){
-        echo "Registro venda".$this->getNome();
+        echo "estou dentro da pasta class\Cliente\Cadastro.php".$this->getNome();
     }
 }
 

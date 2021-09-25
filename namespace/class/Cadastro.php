@@ -6,7 +6,7 @@ class Cadastro{
     private $senha;
 
     public function getNome():string{
-        return $this->nome;
+        return "<br>" . "Estou dentro da pasta class\Cadastro.php".$this->nome;
     }
     public function getEmail():string{
         return $this->email;
