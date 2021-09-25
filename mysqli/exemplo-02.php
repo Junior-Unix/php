@@ -6,6 +6,6 @@ $conn = new mysqli("localhost", "root", "0008", "dbphp7");
     }
 
 $result = $conn->query("SELECT * FROM tb_usuarios ORDER BY deslogin");
-    while($row = $result->fetch_array()){
+    while($row = $result->fetch_array(MYSQLI_ASSOC)){
         var_dump($row);
     }
