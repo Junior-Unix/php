@@ -5,7 +5,7 @@ class Cadastro{
     private $email;
     private $senha;
 
-    public function getName():string{
+    public function getNome():string{
         return $this->nome;
     }
     public function getEmail():string{
@@ -24,4 +24,15 @@ class Cadastro{
     public function setSenha($senha){
         $this->senha  = $senha;
     }
-}
+
+
+        public function __toString(){
+            return json_encode(array(
+                "nome"=>$this->getNome(),
+                "email"=>$this->getEmail(),
+                "senha"=>$this->getSenha()
+            ));
+        }
+    }
+
+    ?>
