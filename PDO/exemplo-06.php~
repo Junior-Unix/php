@@ -16,6 +16,6 @@ $stmt->bindParam(":PASSWORD", $senha);
 $stmt->execute();
 
 //$conn->rollback();
-//$conn->commit();
+$conn->commit();
 
 echo "Inserido com beginTransaction();, aguardando o rollback(); ou commit()";
