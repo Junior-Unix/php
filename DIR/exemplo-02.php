@@ -1,6 +1,6 @@
 <?php
 
-$images = scandir("images");
+$images = scandir("image");
 
 	var_dump($images);
 
