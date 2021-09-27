@@ -18,7 +18,6 @@ class Sql extends PDO{
 		$statment->bindParam($key, $value);
 	}
 	
-	//public function query(string $query, ?int $fetchMode = null, mixed ...$fetchModeArgs)
 	public function query($rawQuery, $params = array()){
 		$stmt = $this->conn->prepare($rawQuery);
 		
