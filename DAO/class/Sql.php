@@ -1,11 +1,13 @@
 <?php
 
 class Sql extends PDO{
+
 	private $conn;
 
 	public function __construct(){
 		$this->conn = new PDO("mysql:host=localhost;dbname=dbphp7", "root", "0008");
 	}
+
 	private function setParams($statment, $parameters = array()){
 		foreach($parameters as $key => $value){
 			$this->setParams($key, $value);
@@ -15,7 +17,8 @@ class Sql extends PDO{
 	private function setParam($statment, $key, $value){
 		$statment->bindParam($key, $value);
 	}
-
+	
+	//public function query(string $query, ?int $fetchMode = null, mixed ...$fetchModeArgs)
 	public function query($rawQuery, $params = array()){
 		$stmt = $this->conn->prepare($rawQuery);
 		
