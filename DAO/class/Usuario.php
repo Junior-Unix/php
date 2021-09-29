@@ -59,6 +59,23 @@ class Usuario{
 		return $sql->select("SELECT * FROM tb_usuarios WHERE deslogin LIKE :SEARCH ORDER BY deslogin", array(':SEARCH'=>"%".$login."%"));
 	}
 
+	public function login($login, $password){
+		$sql = new Sql();
+         $results = $sql->select("SELECT * FROM tb_usuarios WHERE deslogin =  :LOGIN AND dessenha = :PASSWORD", array(":LOGIN"=>$login, ":PASSWORD"=>$password));
+
+			if(isset($results[0])){ //ou count no lugar do isset
+				$row = $results[0];
+
+				$this->setIdusuario($row['idusuario']);
+				$this->setDeslogin($row['deslogin']);
+				$this->setDessenha($row['dessenha']);
+				$this->setDtcadastro(new DateTime($row['dtcadastro']));
+			}else{
+				throw new Exception("Login e/ou senha inválidos.");
+			}
+	}
+
+	
 	public function __toString(){
 
 		return json_encode(array(
