@@ -16,3 +16,13 @@ $base64encode =  "data:" . $mimetype . ";base64," . $base64;
 	<img src="<?=$base64encode?>">
 
 
+/*
+<?php
+//para transformar imagem em código.
+
+$filename = "imagem_aqui.extencao";
+$base64 = base64_encode(file_get_contents($filename));
+echo "data:image/png;base64," . $base64;
+
+?>
+*/
