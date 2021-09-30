@@ -5,8 +5,8 @@ function error_handler($code, $message, $file, $line){
     echo json_encode(array(
         "code"=>$code,
         "message"=>$message,
-        "fine"=>$file,
-        "lile"=>$line
+        "file"=>$file,
+        "line"=>$line
     ));
 
 }
