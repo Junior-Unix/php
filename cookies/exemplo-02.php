@@ -7,6 +7,4 @@
         echo $obj->empresa;
     }
 
-
-
 ?>
