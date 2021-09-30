@@ -11,7 +11,7 @@ imagestring($image, 3, 390, 370, utf8_decode("Concluído em ") . date("d-m-Y"), 
 
 header("Content-type: image/jpeg");
 imagejpeg($image); // em tela.
-imagejpeg($image, "certificado-".date("Y-m-d"). " .jpg"); //em documento.
+imagejpeg($image, "certificado-".date("Y-m-d"). " .jpg", 10); //em documento. o 10 no final, diminuiu a qualidade também.
 
 imagedestroy($image);
 ?>
