@@ -2,16 +2,15 @@
 
 try{
 
+    throw new Exception("Exemplo de erro!", 400);
 
-
-}catch(Exeption $e){
+}catch(Exception $e){
     echo json_encode(array(
-        "messege"=>$e->getMessege(),
-        "line"=>$e->geLine(),
+        "message"=>$e->getMessage(),
+        "line"=>$e->getLine(),
         "file"=>$e->getFile(),
         "code"=>$e->getCode()
     ));
 }
-
 
 ?>
