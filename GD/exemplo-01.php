@@ -1,6 +1,6 @@
 <?php
 
-header("Content-Type: image/png");
+header("Content-Type: image/png"); // para descobrir erros, só descomentar, rodar, descobrir o erro e descomentar.
 $image = imagecreate(720, 720);
 $image1 = imagecreate(700,500);
 $black = imagecolorallocate($image, 0, 0, 0); //Black collor.
