@@ -15,4 +15,4 @@ $base64encode =  "data:" . $mimetype . ";base64," . $base64;
 	<a href="<?=$base64encode?>" target="_blank">Link Para Imagem</a?>
 	<img src="<?=$base64encode?>">
 
-?>
+
