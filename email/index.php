@@ -57,7 +57,7 @@ $mail->setFrom('nelsonlajunior@gmail.com', 'Curso PHP 7');
 //$mail->addReplyTo('replyto@example.com', 'First Last');
 
 //Set who the message is to be sent to
-$mail->addAddress('yosephgustavo@hotmail.com', 'Suporte Hcode');
+$mail->addAddress('suporte@hcode.com.br', 'Suporte Hcode');
 
 //Set the subject line
 $mail->Subject = 'Testando a classe PHPMailer com Gmail, Nelson Junior.';
