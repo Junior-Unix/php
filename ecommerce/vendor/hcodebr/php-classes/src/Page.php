@@ -23,12 +23,15 @@ class Page {
 		);
 		Tpl::configure( $config );
 		$this->tpl = new Tpl();
-		if ($this->options['data']) $this->setData($this->options['data']);
-		if ($this->options['header'] === true) $this->tpl->draw("header", false);
+		if($this->options['data']) 
+            $this->setData($this->options['data']);
+		        if($this->options['header'] === true) 
+                    $this->tpl->draw("header", false);
 	}
 
 	public function __destruct(){
-		if ($this->options['footer'] === true) $this->tpl->draw("footer", false);
+		if($this->options['footer'] === true) 
+            $this->tpl->draw("footer", false);
 	}
 
 	private function setData($data = array()){
