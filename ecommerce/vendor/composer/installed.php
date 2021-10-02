@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'e30b673ad78290dab442cc29c5b15d9f570eabf8',
+        'reference' => 'c2275ad2e3829a96adf19f230da92b96c5fa10ca',
         'name' => 'junior-unix/ecommerce',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'e30b673ad78290dab442cc29c5b15d9f570eabf8',
+            'reference' => 'c2275ad2e3829a96adf19f230da92b96c5fa10ca',
             'dev_requirement' => false,
         ),
         'phpmailer/phpmailer' => array(
